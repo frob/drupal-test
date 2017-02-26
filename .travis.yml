@@ -11,6 +11,8 @@ script:
   - wget https://www.drupal.org/files/issues/csslintrc_file_format-2799603-15_0.patch 
   - git apply -v csslintrc_file_format-2799603-15_0.patch
   - npm install -g csslint
+  - ls
+  - tree
   - csslint
 
 sudo: false
