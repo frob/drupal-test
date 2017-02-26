@@ -6,7 +6,7 @@ branches:
     - "/patch.(.*)/"
     - master
 script: 
-  - git clone --branch 8.2.x https://git.drupal.org/project/drupal.git
+  - git clone --branch 8.4.x https://git.drupal.org/project/drupal.git
   - cd drupal
   - wget https://www.drupal.org/files/issues/csslintrc_file_format-2799603-15_0.patch 
   - git apply -v csslintrc_file_format-2799603-15_0.patch
