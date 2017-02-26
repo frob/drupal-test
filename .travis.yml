@@ -11,9 +11,7 @@ script:
   - wget https://www.drupal.org/files/issues/csslintrc_file_format-2799603-15_0.patch 
   - git apply -v csslintrc_file_format-2799603-15_0.patch
   - npm install -g csslint
-  - ls -al core/
-  - ls -al core/themes/
-  - ls -al core/themes/seven/
-  - csslint
+  - ls -al core/themes/seven/css
+  - csslint core/themes/seven/css/style.css
 
 sudo: false
