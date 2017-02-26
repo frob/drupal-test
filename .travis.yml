@@ -1,5 +1,5 @@
-language: php
-php: 7.1
+language: node_js
+node_js: 5.x
 branches:
   only:
     - "/patch.(.*)/"
@@ -9,4 +9,7 @@ script:
   - cd drupal
   - wget https://www.drupal.org/files/issues/csslintrc_file_format-2799603-15_0.patch 
   - git apply -v csslintrc_file_format-2799603-15_0.patch
+  - npm install -g csslint
+  - csslint
+
 sudo: false
